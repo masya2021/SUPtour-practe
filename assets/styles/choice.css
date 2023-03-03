@@ -1,0 +1,123 @@
+.choice {
+    background: #000000;
+}
+.choice__container {
+    padding-top: 75px;
+    padding-bottom: 97px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0E0E0E;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.45) 100%, rgba(14, 14, 14, 0.65) 45%), linear-gradient(180deg, rgba(141, 141, 141, 0.95) 40%, rgba(141, 141, 141, 0.95) 40%, rgba(141, 141, 141, 0.95) 100%),   url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.choice__title {
+    font-family: 'Play';
+    font-size: 43px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: -0.08em;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 13px #000000;
+    position: relative;
+}
+.choice__title::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 59px;
+    right: -88px;
+    top: calc(50% + 2px);
+    background-color: #FFBF1A;
+}
+.choice__title::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 59px;
+    left: -84px;
+    top: calc(50% + 2px);
+    background-color: #FFBF1A;
+}
+.tour {
+    padding-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    text-align: center;
+    width: 100%;
+}
+.tour__item {
+    max-width: 360px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    border: 1px solid #000000;
+    box-shadow: 0px 12px 9px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 43px 20px 47px;
+    position: relative;
+}
+.tour__item-information {
+    height: 381px;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    color: #D1D1D1;
+}
+.tour__item-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+}
+.tour__item-title--group {
+    padding-top: 28px;
+    font-size: 16px;
+    line-height: 19px;
+    position: relative;
+}
+.tour__item-line {
+    width: 143px;
+    height: 2px;
+    margin-top: 43px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: #FFBF1A;
+}
+.tour__item-text {
+    padding-top: 34px;
+    font-size: 23px;
+    line-height: 27px;
+    height: 140px;
+}
+.tour__item-sum {
+    font-family: 'Play';
+    font-size: 35px;
+    line-height: 40px;
+    color: #FFFFFF;
+    padding-top: 64px;
+}
+.tour__item-sum span {
+    font-size: 16px;
+    line-height: 19px;
+}
+.tour__item-button {
+    margin-top: 55px;
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px #1A1A1A);
+    background: #FFBF1A;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 17px 57.5px;
+    font-family: 'Play';
+    font-size: 15px;
+    line-height: 17px;
+    color: #000000;
+}
+.tour__item-button:hover {
+    background: rgba(255, 191, 26, 0.87);
+    transition: .3s linear;
+}

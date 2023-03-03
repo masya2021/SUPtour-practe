@@ -1,0 +1,95 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;    
+}
+
+*, *::before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    color: #D1D1D1;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img, svg {
+    max-width: 100%;
+    /* height: auto; */
+    max-height: 100%;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1210px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+
+
+@media(max-width: 1440px) {
+   
+}
+
+@media(max-width: 1200px) {
+   
+}
+
+@media(max-width: 1000px) {
+    .container {
+        max-width: 1000px;
+        padding: 0 60px;
+    }
+    .title {
+        font-size: 35px;
+        line-height: 46px;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        max-width: calc(669px + 50px);
+        padding: 0 25px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 580px) {
+    .title {
+        font-size: 25px;
+        line-height: 33px;
+    }
+}
+
+@media(max-width: 480px) {
+    .container {
+        max-width: 380px;
+    }
+}

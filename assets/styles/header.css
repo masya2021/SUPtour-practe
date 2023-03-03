@@ -1,0 +1,75 @@
+.header {
+    position: absolute;
+    width: 100%;
+}
+.header__container {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo {
+    cursor: pointer;
+    width: 106px;
+    height: 37px;
+    position: relative;
+}
+.logo__title {
+    position: absolute;
+    top: 14px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.logo-header {
+    position: absolute;
+    top: 5px;
+    left: 36px;
+    width: 70px;
+    height: 37px;
+}
+.navigation__list {
+    display: flex;
+    padding-top: 11px;
+    font-family: 'Play';
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.list__item {
+    margin-right: 28px;
+}
+.list__item:last-child {
+    margin-right: 0;
+}
+.list__item:hover {
+    opacity: 0.6;
+    transition: .3s linear;
+}
+.header__phone {
+    display: flex;
+    flex-direction: column;
+}
+.phone__button {
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 14px 14px;
+    font-family: 'Play';
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: transparent;
+    transition: all .3s linear;
+}
+.phone__button:hover {
+    opacity: 0.6;
+    color: #000000;
+    background-color: white;
+}
+.phone__number {
+    padding-top: 12px;
+    align-self: flex-end;
+}

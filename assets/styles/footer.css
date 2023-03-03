@@ -1,0 +1,26 @@
+.footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 1) 100%, rgba(0, 0,0, 0) 25%), url('../images/footer/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 0;
+}
+.footer__logo {
+    cursor: pointer;
+    width: 106px;
+    height: 37px;
+}
+.phone {
+    font-family: 'Play';
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.phone__number:hover {
+    opacity: 0.6;
+    transition: .3s linear;
+}

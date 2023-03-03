@@ -1,0 +1,25 @@
+.footer__list { 
+    display: flex;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    transition: 0.3s linear;
+}
+.footer__list-item {
+    margin-right: 56px;
+}
+.footer__list-item:last-child {
+    margin-right: 0;
+}
+.footer__list-item:hover {
+    opacity: 0.6;
+    transition: .3s linear;
+}
+
+
+@media(max-width: 668px) {
+   
+}

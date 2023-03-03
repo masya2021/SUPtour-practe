@@ -1,0 +1,65 @@
+.hero {
+    background-image: url('../images/Главная.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 265px;
+}
+.hero__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 160px;
+}
+.description__text {
+    max-width: 883px;
+    width: 100%;
+    font-family: 'Play';
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+.description__socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+}
+.socials__list {
+    width: 40px;
+    height: 40px;
+    transition: .3s linear;
+}
+.socials__list:hover {
+    filter: drop-shadow(0px 2px 15px #dbf871ce);
+    transform: scale(1.1);
+}
+.hero__sale {
+    padding-top: 40px;
+    font-family: 'Play';
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+.hero__button {
+    margin-top: 50px;
+    margin-bottom: 247px;
+}
+.button {
+    border: none;
+    outline: none;
+    padding: 19px 34px 15px 34px;
+    background: rgba(255, 191, 26, 0.87);
+    border-radius: 10px;
+    filter: drop-shadow(0px 2px 15px #B6B6B6);
+    font-family: 'Play';
+    font-size: 16px;
+    line-height: 0.68;
+    text-align: center;
+    color: #000000;
+    transition: all .3s linear;
+}
+.button:hover {
+    background-color: rgb(255, 255, 0);
+}
