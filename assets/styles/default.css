@@ -54,7 +54,7 @@ h1, h2, h3, p {
 
 
 
-@media(max-width: 1440px) {
+/* @media(max-width: 1440px) {
    
 }
 
@@ -71,9 +71,9 @@ h1, h2, h3, p {
         font-size: 35px;
         line-height: 46px;
     }
-}
+} */
 
-@media(max-width: 800px) {
+/* @media(max-width: 800px) {
     .container {
         max-width: calc(669px + 50px);
         padding: 0 25px;
@@ -92,4 +92,4 @@ h1, h2, h3, p {
     .container {
         max-width: 380px;
     }
-}
+} */

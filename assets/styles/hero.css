@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 160px;
+    padding-left: 25px;
 }
 .socials__list {
     width: 40px;
@@ -62,4 +63,74 @@
 }
 .button:hover {
     background-color: rgb(255, 255, 0);
+}
+@media(max-width: 768px) {
+    .hero {
+        padding-top: 165px;
+    }
+    .description__text {
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .hero__sale {
+        max-width: 450px;
+        padding-top: 48px;
+        font-size: 19px;
+    }
+    .hero__button {
+        margin-top: 50px;
+        margin-bottom: 120px;
+    }
+    .button {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+    .description__socials {
+        height: 140px;
+    }
+}
+@media(max-width: 576px) {
+    .hero {
+        padding-top: 120px;
+    }
+    .description__text {
+        font-size: 32px;
+    }
+    .hero__description {
+        height: auto;
+        flex-direction: column;
+    }
+    .description__socials {
+        flex-direction: row;
+        padding-top: 25px;
+        padding-left: 0;
+        gap: 25px;
+        height: auto;
+    }
+    .hero__sale {
+        max-width: 320px;
+        padding-top: 32px;
+        font-size: 16px;
+        margin-right: 0;
+    }
+    .socials__list {
+        width: 34px;
+        height: 34px;
+    }
+    .hero__button {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+}
+@media(max-width: 476px) {
+    .description__text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .hero__sale {
+        font-size: 13px;
+    }
+    .hero__button {
+        margin-bottom: 80px;
+    }
 }
