@@ -7,6 +7,7 @@
     line-height: 22px;
     color: #FFFFFF;
     transition: 0.3s linear;
+    white-space: nowrap;
 }
 .footer__list-item {
     margin-right: 56px;
@@ -21,8 +22,45 @@
 
 
 @media(max-width: 992px) {
+    .footer__list {
+        font-size: 16px;
+    }
 }
 @media(max-width: 768px) {
+    .footer__navigation {
+        padding: 0 20px;
+    }
+    .footer__list {
+        font-size: 14px;
+    }
+    .footer__list-item {
+        margin-right: 14px;
+    }
+    .footer__list-item:last-child {
+        margin-right: 0;
+    }
 }
+@media(max-width: 576px) {
+    .footer__list { 
+       flex-wrap: wrap;
+       justify-content: space-between;
+    }
+    .footer__list-item {
+        margin-right: 0;
+        max-width: 40%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
 @media(max-width: 476px) {
+    .footer__list { 
+        flex-wrap: nowrap;
+        font-size: 12px;
+     }
+     .footer__list-item {
+         margin-right: 15px;
+         padding-top: 8px;
+         padding-bottom: 2px;
+     }
 }

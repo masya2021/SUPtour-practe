@@ -24,24 +24,16 @@
     box-shadow: 0px 4px 23px rgba(255, 255, 255, 0.47);
     position: relative;
 }
-.team__image::after {
+.team__image-border {
     position: absolute;
-    content: "";
-    width: 26%;
-    height: 1px;
-    right: -54px;
-    bottom: -60px;
+    max-width: 143px;
+    width: 100%;
+    height: 143px;
     border-bottom: 2px solid #FFBF1A;
-}
-.team__image::before {
-    position: absolute;
-    content: "";
-    width: 26%;
-    height: 1px;
-    right: -118px;
-    bottom: 3px;
-    transform: rotate(90deg);
-    border-bottom: 2px solid #FFBF1A;
+    border-right: 2px solid #FFBF1A;
+    right: -52px;
+    bottom: -62px;
+    margin-right: 15px;
 }
 .team__description {
     margin-left: 60px;
@@ -63,7 +55,8 @@
     border-radius: 10px;
     left: 30px;
     bottom: 37px;
-    width: 531px;
+    max-width: 531px;
+    width: 100%;
     height: 158px;
     z-index: 1;
 }
@@ -144,4 +137,204 @@
     font-size: 23px;
     line-height: 27px;
     color: #D1D1D1;
+}
+
+@media(max-width: 1200px) {
+    .team__text {
+        margin-right: 0;
+        font-size: 36px;
+        line-height: 42px;
+        max-width: 490px;
+    }
+    .team__text::before {
+        max-width: 95%;
+        max-height: 120px;
+        bottom: 40px;
+    }
+    .team__item-number {
+        font-family: 'Righteous';
+        font-size: 44px;
+        line-height: 64px;
+    }
+    .team__item-text {
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .team__image {
+        max-width: 410px;
+        max-height: 440px;
+    }
+    .team__skiils {
+        gap: 76px 16px;
+    }
+    .skill__item {
+        max-width: calc(240px - 16px);
+    }
+}
+@media(max-width: 992px) {
+    .team__container {
+        padding-top: 30px;
+        flex-direction: column-reverse;     
+    }
+    .team__description {
+        padding-top: 50px;
+        margin-left: 0;
+    }
+    .team__text {
+        margin-right: 0;
+        font-size: 43px;
+        line-height: 50px;
+        max-width: 700px;
+    }
+    .team__text::before {
+        max-width: 650px;
+        max-height: 125px;
+    }
+    .team__skiils {
+        gap: 72px 25px;
+        max-width: 700px;
+        justify-content: space-around;
+    }
+    .skill__item {
+        max-width: calc(290px - 16px);
+    }
+    .team__image {
+        margin-top: 25px;
+        margin-bottom: 30px;
+        max-width: 410px;
+        max-height: 440px;
+    }
+    .team__image-border {
+        bottom: -38px;
+    }
+    .skill__item:nth-child(-n+4)::after {
+        bottom: -36px;
+    }
+}
+@media(max-width: 768px) {
+    .team__container {
+        padding-top: 30px;
+        flex-direction: column-reverse;     
+    }
+    .team__description {
+        padding-top: 30px;
+    }
+    .team__text {
+        font-size: 38px;
+        line-height: 44px;
+        max-width: 600px;
+    }
+    .team__text::before {
+        max-width: 97%;
+        max-height: 105px;
+    }
+    .team__skiils {
+        gap: 72px 25px;
+        max-width: 700px;
+        justify-content: space-around;
+    }
+    .skill__item {
+        max-width: calc(240px - 16px);
+    }
+    .team__image {
+        max-width: 440px;
+        max-height: 400px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .team__image-border {
+        right: -44px;
+        bottom: -18px;
+    }
+    .skill__item:nth-child(-n+4)::after {
+        bottom: -36px;
+    }
+}
+@media(max-width: 576px) {
+    .team__container {
+         padding-bottom: 30px;
+    }
+    .team__text {
+        font-size: 32px;
+    }
+    .team__text::before {
+        max-width: 95%;
+    }
+    .team__item-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .team__item-number {
+        font-size: 36px;
+        line-height: 52px;
+    }
+    .skill__item {
+        max-width: calc(210px - 16px);
+    }
+    .team__image {
+        max-width: 370px;
+        max-height: 340px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+}
+@media(max-width: 476px) {
+    .team__text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .team__text::before {
+        max-width: 95%;
+        max-height: 76px;
+        left: 16px;
+        bottom: 26px;
+    }
+    .team__item-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .team__item-number {
+        font-size: 36px;
+        line-height: 52px;
+    }
+    .team__image {
+        max-width: 320px;
+        max-height: 300px;
+    }
+    .skill__item:nth-child(-n + 5)::after {
+        position: absolute;
+        content: "";
+        width: 42.215%;
+        height: 1px;
+        left: 15px;
+        bottom: -16px;
+        border-bottom: 2px solid #FFBF1A;
+    }
+    .skill__item:nth-child(1) {
+        order: 0;
+    }
+    .skill__item:nth-child(2) {
+        order: 0;
+    }
+    .skill__item:nth-child(3) {
+        order: 0;
+    }
+    .skill__item:nth-child(4) {
+        order: 0;
+    }
+    .skill__item:nth-child(5) {
+        order: 0;
+    }
+    .skill__item:nth-child(6) {
+        order: 0;
+    }
+    .team__skiils {
+        gap: 32px 25px;
+    }
+    .skill__item {
+        max-width: calc(232px - 16px);
+    }
+    .team__image-border {
+       display: none;
+    }
 }
