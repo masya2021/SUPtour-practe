@@ -26,6 +26,7 @@
     flex-direction: column;
     max-width: 362px;
     width: 100%;
+    margin-right: 25px;
 }
 .gallery__title {
     font-size: 43px;
@@ -63,7 +64,10 @@
     position: relative;
 }
 .gallery__image::before, .gallery__image::after {
-    content: url('../svg/arrow.svg');
+    content: '';
+    background-image: url('../svg/arrow.svg');
+    background-size: 32px;
+    background-repeat: no-repeat;
     width: 32px;
     height: 30px;
     position: absolute;
@@ -79,4 +83,99 @@
     transform: rotate(180deg);
     top: calc(50% - 5px);
     right: 28px;
+}
+
+@media(max-width: 992px) {
+    .gallery__container {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+}
+@media(max-width: 768px) {
+    .gallery__container {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+    .gallery__title {
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .gallery__text {
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .gallery__border {
+        max-width: 120px;
+        height: 120px;
+    }
+    .gallery__image::before, .gallery__image::after {
+        background-size: 32px 32px;
+        width: 35px;
+        height: 35px;
+    }
+    .gallery__image::after {
+        height: 31px;
+    }
+}
+@media(max-width: 576px) {
+    .gallery__container {
+        padding-top: 52px;
+        padding-bottom: 52px;
+        flex-direction: column;
+    }
+    .gallery__description {
+        margin-right: 0;
+        margin-bottom: 22px;
+    }
+    .gallery__title {
+        font-size: 32px;
+    }
+    .gallery__text {
+        font-size: 16px;
+    }
+    .gallery__border {
+        max-width: 102px;
+        height: 102px;
+        margin-top: -60px;
+        margin-right: 20px;
+    }
+    .gallery__image {
+        max-height: 400px;
+    }
+    .gallery__image::before, .gallery__image::after {
+        background-size: 26px;
+    }
+    .gallery__image::after {
+        height: 24px;
+    }
+}
+@media(max-width: 476px) {
+    .gallery__container {
+        padding-top: 52px;
+        padding-bottom: 52px;
+        flex-direction: column;
+    }
+    .gallery__description {
+        margin-right: 0;
+        margin-bottom: 22px;
+    }
+    .gallery__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .gallery__text {
+        font-size: 14px;
+    }
+    .gallery__border {
+        max-width: 82px;
+        height: 82px;
+        margin-top: -52px;
+        margin-right: 30px;
+    }
+    .gallery__image {
+        max-height: 360px;
+    }
+    .gallery__button {
+        max-width: 145px;
+    }
 }

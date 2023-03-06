@@ -121,3 +121,135 @@
     background: rgba(255, 191, 26, 0.87);
     transition: .3s linear;
 }
+@media(max-width: 992px) {
+    .tour {
+        padding-top: 55px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tour__item {
+        max-width: 350px;
+    }
+}
+@media(max-width: 768px) {
+    .choice__container {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    .choice__title {
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .tour__item-information {
+        height: 356px;
+    }
+    .tour__item-title {
+        font-size: 25px;
+        line-height: 29px;
+    }
+    .tour__item-title--group {
+        padding-top: 28px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .tour__item-text {
+        padding-top: 28px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .tour__item-sum {
+        font-size: 29px;
+        line-height: 33px;
+        padding-top: 48px;
+    }
+    .tour__item-sum span {
+        font-size: 14px;
+        line-height: 16px;
+    }    
+    .tour__item-button {
+        margin-top: 45px;
+    }
+}
+@media(max-width: 576px) {
+    .tour {
+        padding-top: 40px;
+    }
+    .choice__title {
+        font-size: 32px;
+    }
+    .tour__item-information {
+        height: 356px;
+    }
+    .tour__item-title {
+        font-size: 21px;
+        line-height: 25px;
+    }
+    .tour__item-title--group {
+        padding-top: 24px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .tour__item-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .tour__item-sum {
+        font-size: 24px;
+        line-height: 28px;
+        padding-top: 42px;
+    }
+    .tour__item-sum span {
+        font-size: 12px;
+        line-height: 14px;
+    }    
+    .tour__item-button {
+        margin-top: 40px;
+    }
+}
+@media(max-width: 476px) {
+    .choice__container {
+        padding-top: 40px;
+        padding-bottom: 35px;
+    }
+    .tour {
+        padding-top: 25px;
+    }
+    .tour__item {
+        max-width: 280px;
+    }
+    .choice__title {
+        font-size: 24px;
+    }
+    .tour__item-information {
+        height: 320px;
+    }
+    .tour__item-title {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .tour__item-title--group {
+        padding-top: 18px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .tour__item-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .tour__item-sum {
+        font-size: 18px;
+        line-height: 23px;
+        padding-top: 18px;
+    }  
+    .tour__item-button {
+        margin-top: 0px;
+    }
+    .choice__title::before {
+        width: 50px;
+        right: -82px;
+    }
+    .choice__title::after {
+        width: 50px;
+        left: -82px;
+    }
+}
